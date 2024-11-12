@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/StreamCipher.dir/OTP-decryption.cpp.o CMakeFiles/StreamCipher.dir/OTP-encryption.cpp.o CMakeFiles/StreamCipher.dir/simulator.cpp.o CMakeFiles/StreamCipher.dir/Alice.cpp.o CMakeFiles/StreamCipher.dir/Bob.cpp.o -o StreamCipher 
