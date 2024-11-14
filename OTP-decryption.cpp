@@ -11,14 +11,14 @@ OTP_Decryption::OTP_Decryption() {
   key_ = {};
 }
 
-OTP_Decryption::OTP_Decryption(const size_t &length, const std::vector<bool> &key) {
+OTP_Decryption::OTP_Decryption(const size_t &length, const std::vector<unsigned int> &key) {
   length_ = length;
   key_ = key;
 }
 
-std::vector<bool> OTP_Decryption::Decrypt(const std::vector<bool> &ciphertext) {
+std::vector<unsigned int> OTP_Decryption::Decrypt(const std::vector<unsigned int> &ciphertext) {
   assert(length_ == ciphertext.size());
-  std::vector<bool> message(length_);
+  std::vector<unsigned int> message(length_);
   for (int i = 0; i < length_; ++i) {
     message[i] = ciphertext[i] ^ key_[i];
   }

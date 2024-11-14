@@ -10,7 +10,7 @@ Alice::Alice() {
   message_ = {};
 }
 
-Alice::Alice(const size_t &length, const std::vector<bool> &key) {
+Alice::Alice(const size_t &length, const std::vector<unsigned int> &key) {
   length_ = length;
   message_.resize(length_);
   std::mt19937 rnd(time(nullptr));
@@ -21,11 +21,11 @@ Alice::Alice(const size_t &length, const std::vector<bool> &key) {
   encryptor_ = OTP_Encryption(length_, key);
 }
 
-std::vector<bool> Alice::Transmit() {
+std::vector<unsigned int> Alice::Transmit() {
   return encryptor_.Encrypt(message_);
 }
 
-bool Alice::Check(const std::vector<bool> &b_message) {
+bool Alice::Check(const std::vector<unsigned int> &b_message) {
   for (int i = 0; i < length_; ++i) {
     if (message_[i] != b_message[i]) {
       return false;

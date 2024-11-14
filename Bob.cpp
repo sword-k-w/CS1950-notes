@@ -9,11 +9,11 @@ Bob::Bob() {
   decryptor_ = OTP_Decryption();
 }
 
-Bob::Bob(const size_t &length, const std::vector<bool> &key) {
+Bob::Bob(const size_t &length, const std::vector<unsigned int> &key) {
   length_ = length;
   decryptor_ = OTP_Decryption(length_, key);
 }
 
-std::vector<bool> Bob::Obtain_Message(const std::vector<bool> &ciphertext) {
+std::vector<unsigned int> Bob::Obtain_Message(const std::vector<unsigned int> &ciphertext) {
   return decryptor_.Decrypt(ciphertext);
 }
