@@ -2,38 +2,45 @@
 // Created by sword on 2024/11/10.
 //
 
-#ifndef OTP_H
-#define OTP_H
+#ifndef Salsa20_H
+#define Salsa20_H
 
 #include <vector>
 #include <cstddef>
 
-class OTP_Encryption {
+class PRG {
+  static std::vector<unsigned int> nonce;
+  static std::vector<unsigned int> key;
+  void Init();
+  std::vector<unsigned int> Generate();
+};
+
+class Salsa20_Encryption {
 private:
   size_t length_;
   std::vector<unsigned int> key_;
 public:
-  OTP_Encryption();
-  OTP_Encryption(const size_t &, const std::vector<unsigned int> &);
+  Salsa20_Encryption();
+  Salsa20_Encryption(const size_t &, const std::vector<unsigned int> &);
   std::vector<unsigned int> Encrypt(const std::vector<unsigned int> &);
 };
 
-class OTP_Decryption {
+class Salsa20_Decryption {
 private:
   size_t length_;
   std::vector<unsigned int> key_;
 public:
-  OTP_Decryption();
-  OTP_Decryption(const size_t &, const std::vector<unsigned int> &);
+  Salsa20_Decryption();
+  Salsa20_Decryption(const size_t &, const std::vector<unsigned int> &);
   std::vector<unsigned int> Decrypt(const std::vector<unsigned int> &);
 };
 
 class Alice {
 private:
-  friend class OTP_Encyption;
+  friend class Salsa20_Encyption;
   size_t length_;
   std::vector<unsigned int> message_;
-  OTP_Encryption encryptor_;
+  Salsa20_Encryption encryptor_;
 public:
   Alice();
   Alice(const size_t &, const std::vector<unsigned int> &);
@@ -43,13 +50,13 @@ public:
 
 class Bob {
 private:
-  friend class OTP_Decryption;
+  friend class Salsa20_Decryption;
   size_t length_;
-  OTP_Decryption decryptor_;
+  Salsa20_Decryption decryptor_;
 public:
   Bob();
   Bob(const size_t &, const std::vector<unsigned int> &);
   std::vector<unsigned int> Obtain_Message(const std::vector<unsigned int> &);
 };
 
-#endif //OTP_H
+#endif //Salsa20_H

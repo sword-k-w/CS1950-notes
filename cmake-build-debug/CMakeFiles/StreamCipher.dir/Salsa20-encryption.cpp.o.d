@@ -1,5 +1,6 @@
-CMakeFiles/StreamCipher.dir/Bob.cpp.o: \
- /home/sword/swordProject/StreamCipher/Bob.cpp /usr/include/stdc-predef.h \
+CMakeFiles/StreamCipher.dir/Salsa20-encryption.cpp.o: \
+ /home/sword/swordProject/StreamCipher/Salsa20-encryption.cpp \
+ /usr/include/stdc-predef.h \
  /home/sword/swordProject/StreamCipher/./Salsa20.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -42,4 +43,5 @@ CMakeFiles/StreamCipher.dir/Bob.cpp.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/cstddef \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+ /usr/include/c++/11/cassert /usr/include/assert.h

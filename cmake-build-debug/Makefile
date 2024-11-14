@@ -177,53 +177,53 @@ Bob.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Bob.cpp.s
 .PHONY : Bob.cpp.s
 
-OTP-decryption.o: OTP-decryption.cpp.o
-.PHONY : OTP-decryption.o
+Salsa-decryption.o: Salsa-decryption.cpp.o
+.PHONY : Salsa-decryption.o
 
 # target to build an object file
-OTP-decryption.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/OTP-decryption.cpp.o
-.PHONY : OTP-decryption.cpp.o
+Salsa-decryption.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o
+.PHONY : Salsa-decryption.cpp.o
 
-OTP-decryption.i: OTP-decryption.cpp.i
-.PHONY : OTP-decryption.i
+Salsa-decryption.i: Salsa-decryption.cpp.i
+.PHONY : Salsa-decryption.i
 
 # target to preprocess a source file
-OTP-decryption.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/OTP-decryption.cpp.i
-.PHONY : OTP-decryption.cpp.i
+Salsa-decryption.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.i
+.PHONY : Salsa-decryption.cpp.i
 
-OTP-decryption.s: OTP-decryption.cpp.s
-.PHONY : OTP-decryption.s
+Salsa-decryption.s: Salsa-decryption.cpp.s
+.PHONY : Salsa-decryption.s
 
 # target to generate assembly for a file
-OTP-decryption.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/OTP-decryption.cpp.s
-.PHONY : OTP-decryption.cpp.s
+Salsa-decryption.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.s
+.PHONY : Salsa-decryption.cpp.s
 
-OTP-encryption.o: OTP-encryption.cpp.o
-.PHONY : OTP-encryption.o
+Salsa20-encryption.o: Salsa20-encryption.cpp.o
+.PHONY : Salsa20-encryption.o
 
 # target to build an object file
-OTP-encryption.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/OTP-encryption.cpp.o
-.PHONY : OTP-encryption.cpp.o
+Salsa20-encryption.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa20-encryption.cpp.o
+.PHONY : Salsa20-encryption.cpp.o
 
-OTP-encryption.i: OTP-encryption.cpp.i
-.PHONY : OTP-encryption.i
+Salsa20-encryption.i: Salsa20-encryption.cpp.i
+.PHONY : Salsa20-encryption.i
 
 # target to preprocess a source file
-OTP-encryption.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/OTP-encryption.cpp.i
-.PHONY : OTP-encryption.cpp.i
+Salsa20-encryption.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa20-encryption.cpp.i
+.PHONY : Salsa20-encryption.cpp.i
 
-OTP-encryption.s: OTP-encryption.cpp.s
-.PHONY : OTP-encryption.s
+Salsa20-encryption.s: Salsa20-encryption.cpp.s
+.PHONY : Salsa20-encryption.s
 
 # target to generate assembly for a file
-OTP-encryption.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/OTP-encryption.cpp.s
-.PHONY : OTP-encryption.cpp.s
+Salsa20-encryption.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa20-encryption.cpp.s
+.PHONY : Salsa20-encryption.cpp.s
 
 simulator.o: simulator.cpp.o
 .PHONY : simulator.o
@@ -264,12 +264,12 @@ help:
 	@echo "... Bob.o"
 	@echo "... Bob.i"
 	@echo "... Bob.s"
-	@echo "... OTP-decryption.o"
-	@echo "... OTP-decryption.i"
-	@echo "... OTP-decryption.s"
-	@echo "... OTP-encryption.o"
-	@echo "... OTP-encryption.i"
-	@echo "... OTP-encryption.s"
+	@echo "... Salsa-decryption.o"
+	@echo "... Salsa-decryption.i"
+	@echo "... Salsa-decryption.s"
+	@echo "... Salsa20-encryption.o"
+	@echo "... Salsa20-encryption.i"
+	@echo "... Salsa20-encryption.s"
 	@echo "... simulator.o"
 	@echo "... simulator.i"
 	@echo "... simulator.s"

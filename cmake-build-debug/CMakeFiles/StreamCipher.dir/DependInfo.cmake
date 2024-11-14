@@ -10,8 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/sword/swordProject/StreamCipher/Alice.cpp" "CMakeFiles/StreamCipher.dir/Alice.cpp.o" "gcc" "CMakeFiles/StreamCipher.dir/Alice.cpp.o.d"
   "/home/sword/swordProject/StreamCipher/Bob.cpp" "CMakeFiles/StreamCipher.dir/Bob.cpp.o" "gcc" "CMakeFiles/StreamCipher.dir/Bob.cpp.o.d"
-  "/home/sword/swordProject/StreamCipher/OTP-decryption.cpp" "CMakeFiles/StreamCipher.dir/OTP-decryption.cpp.o" "gcc" "CMakeFiles/StreamCipher.dir/OTP-decryption.cpp.o.d"
-  "/home/sword/swordProject/StreamCipher/OTP-encryption.cpp" "CMakeFiles/StreamCipher.dir/OTP-encryption.cpp.o" "gcc" "CMakeFiles/StreamCipher.dir/OTP-encryption.cpp.o.d"
+  "/home/sword/swordProject/StreamCipher/Salsa-decryption.cpp" "CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o" "gcc" "CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o.d"
+  "/home/sword/swordProject/StreamCipher/Salsa20-encryption.cpp" "CMakeFiles/StreamCipher.dir/Salsa20-encryption.cpp.o" "gcc" "CMakeFiles/StreamCipher.dir/Salsa20-encryption.cpp.o.d"
   "/home/sword/swordProject/StreamCipher/simulator.cpp" "CMakeFiles/StreamCipher.dir/simulator.cpp.o" "gcc" "CMakeFiles/StreamCipher.dir/simulator.cpp.o.d"
   )
 

@@ -2,7 +2,7 @@
 // Created by sword on 2024/11/10.
 //
 
-#include <OTP.h>
+#include <Salsa20.h>
 #include <random>
 
 Alice::Alice() {
@@ -18,7 +18,7 @@ Alice::Alice(const size_t &length, const std::vector<unsigned int> &key) {
   for (size_t i = 0; i < length; ++i) {
     message_[i] = zero_one(rnd);
   }
-  encryptor_ = OTP_Encryption(length_, key);
+  encryptor_ = Salsa20_Encryption(length_, key);
 }
 
 std::vector<unsigned int> Alice::Transmit() {
