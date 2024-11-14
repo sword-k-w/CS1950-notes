@@ -4,6 +4,7 @@
 
 #include <Salsa20.h>
 #include <cassert>
+#include <cstdio>
 
 Salsa20_Encryption::Salsa20_Encryption() {
   length_ = 0;
@@ -18,8 +19,9 @@ Salsa20_Encryption::Salsa20_Encryption(const size_t &length, const std::vector<u
 std::vector<unsigned int> Salsa20_Encryption::Encrypt(const std::vector<unsigned int> &message) {
   assert(length_ == message.size());
   std::vector<unsigned int> cyphertext(length_);
+  auto key_stream = PRG::Generate(length_, key_);
   for (int i = 0; i < length_; ++i) {
-    cyphertext[i] = message[i] ^ key_[i];
+    cyphertext[i] = message[i] ^ key_stream[i];
   }
   return cyphertext;
 }

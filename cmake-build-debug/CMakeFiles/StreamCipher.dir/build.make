@@ -69,19 +69,19 @@ include CMakeFiles/StreamCipher.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/StreamCipher.dir/flags.make
 
-CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o: CMakeFiles/StreamCipher.dir/flags.make
-CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o: ../Salsa-decryption.cpp
-CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o: CMakeFiles/StreamCipher.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sword/swordProject/StreamCipher/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o -MF CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o.d -o CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o -c /home/sword/swordProject/StreamCipher/Salsa-decryption.cpp
+CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.o: CMakeFiles/StreamCipher.dir/flags.make
+CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.o: ../Salsa20-decryption.cpp
+CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.o: CMakeFiles/StreamCipher.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sword/swordProject/StreamCipher/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.o -MF CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.o.d -o CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.o -c /home/sword/swordProject/StreamCipher/Salsa20-decryption.cpp
 
-CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sword/swordProject/StreamCipher/Salsa-decryption.cpp > CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.i
+CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sword/swordProject/StreamCipher/Salsa20-decryption.cpp > CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.i
 
-CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sword/swordProject/StreamCipher/Salsa-decryption.cpp -o CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.s
+CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sword/swordProject/StreamCipher/Salsa20-decryption.cpp -o CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.s
 
 CMakeFiles/StreamCipher.dir/Salsa20-encryption.cpp.o: CMakeFiles/StreamCipher.dir/flags.make
 CMakeFiles/StreamCipher.dir/Salsa20-encryption.cpp.o: ../Salsa20-encryption.cpp
@@ -139,25 +139,41 @@ CMakeFiles/StreamCipher.dir/Bob.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StreamCipher.dir/Bob.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sword/swordProject/StreamCipher/Bob.cpp -o CMakeFiles/StreamCipher.dir/Bob.cpp.s
 
+CMakeFiles/StreamCipher.dir/PRG.cpp.o: CMakeFiles/StreamCipher.dir/flags.make
+CMakeFiles/StreamCipher.dir/PRG.cpp.o: ../PRG.cpp
+CMakeFiles/StreamCipher.dir/PRG.cpp.o: CMakeFiles/StreamCipher.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sword/swordProject/StreamCipher/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/StreamCipher.dir/PRG.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StreamCipher.dir/PRG.cpp.o -MF CMakeFiles/StreamCipher.dir/PRG.cpp.o.d -o CMakeFiles/StreamCipher.dir/PRG.cpp.o -c /home/sword/swordProject/StreamCipher/PRG.cpp
+
+CMakeFiles/StreamCipher.dir/PRG.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StreamCipher.dir/PRG.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sword/swordProject/StreamCipher/PRG.cpp > CMakeFiles/StreamCipher.dir/PRG.cpp.i
+
+CMakeFiles/StreamCipher.dir/PRG.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StreamCipher.dir/PRG.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sword/swordProject/StreamCipher/PRG.cpp -o CMakeFiles/StreamCipher.dir/PRG.cpp.s
+
 # Object files for target StreamCipher
 StreamCipher_OBJECTS = \
-"CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o" \
+"CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.o" \
 "CMakeFiles/StreamCipher.dir/Salsa20-encryption.cpp.o" \
 "CMakeFiles/StreamCipher.dir/simulator.cpp.o" \
 "CMakeFiles/StreamCipher.dir/Alice.cpp.o" \
-"CMakeFiles/StreamCipher.dir/Bob.cpp.o"
+"CMakeFiles/StreamCipher.dir/Bob.cpp.o" \
+"CMakeFiles/StreamCipher.dir/PRG.cpp.o"
 
 # External object files for target StreamCipher
 StreamCipher_EXTERNAL_OBJECTS =
 
-StreamCipher: CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o
+StreamCipher: CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.o
 StreamCipher: CMakeFiles/StreamCipher.dir/Salsa20-encryption.cpp.o
 StreamCipher: CMakeFiles/StreamCipher.dir/simulator.cpp.o
 StreamCipher: CMakeFiles/StreamCipher.dir/Alice.cpp.o
 StreamCipher: CMakeFiles/StreamCipher.dir/Bob.cpp.o
+StreamCipher: CMakeFiles/StreamCipher.dir/PRG.cpp.o
 StreamCipher: CMakeFiles/StreamCipher.dir/build.make
 StreamCipher: CMakeFiles/StreamCipher.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sword/swordProject/StreamCipher/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable StreamCipher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sword/swordProject/StreamCipher/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable StreamCipher"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StreamCipher.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

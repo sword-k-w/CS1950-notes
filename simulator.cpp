@@ -12,15 +12,15 @@ int main() {
   std::uniform_int_distribution<size_t> length_dist(10, 1000000);
   size_t length = length_dist(rnd);
 
-  std::vector<unsigned int> key(length);
-  std::uniform_int_distribution<unsigned int> zero_one(0, -1);
-  for (size_t i = 0; i < length; ++i) {
-    key[i] = zero_one(rnd);
+  std::vector<unsigned int> key(4);
+  for (size_t i = 0; i < 4; ++i) {
+    key[i] = rnd();
   }
 
   Alice a(length, key);
   Bob b(length, key);
 
+  PRG::Init();
   std::vector<unsigned int> message = b.Obtain_Message(a.Transmit());
 
   if (a.Check(message)) {

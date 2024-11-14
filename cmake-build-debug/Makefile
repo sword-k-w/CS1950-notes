@@ -177,29 +177,53 @@ Bob.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Bob.cpp.s
 .PHONY : Bob.cpp.s
 
-Salsa-decryption.o: Salsa-decryption.cpp.o
-.PHONY : Salsa-decryption.o
+PRG.o: PRG.cpp.o
+.PHONY : PRG.o
 
 # target to build an object file
-Salsa-decryption.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.o
-.PHONY : Salsa-decryption.cpp.o
+PRG.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/PRG.cpp.o
+.PHONY : PRG.cpp.o
 
-Salsa-decryption.i: Salsa-decryption.cpp.i
-.PHONY : Salsa-decryption.i
+PRG.i: PRG.cpp.i
+.PHONY : PRG.i
 
 # target to preprocess a source file
-Salsa-decryption.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.i
-.PHONY : Salsa-decryption.cpp.i
+PRG.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/PRG.cpp.i
+.PHONY : PRG.cpp.i
 
-Salsa-decryption.s: Salsa-decryption.cpp.s
-.PHONY : Salsa-decryption.s
+PRG.s: PRG.cpp.s
+.PHONY : PRG.s
 
 # target to generate assembly for a file
-Salsa-decryption.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa-decryption.cpp.s
-.PHONY : Salsa-decryption.cpp.s
+PRG.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/PRG.cpp.s
+.PHONY : PRG.cpp.s
+
+Salsa20-decryption.o: Salsa20-decryption.cpp.o
+.PHONY : Salsa20-decryption.o
+
+# target to build an object file
+Salsa20-decryption.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.o
+.PHONY : Salsa20-decryption.cpp.o
+
+Salsa20-decryption.i: Salsa20-decryption.cpp.i
+.PHONY : Salsa20-decryption.i
+
+# target to preprocess a source file
+Salsa20-decryption.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.i
+.PHONY : Salsa20-decryption.cpp.i
+
+Salsa20-decryption.s: Salsa20-decryption.cpp.s
+.PHONY : Salsa20-decryption.s
+
+# target to generate assembly for a file
+Salsa20-decryption.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StreamCipher.dir/build.make CMakeFiles/StreamCipher.dir/Salsa20-decryption.cpp.s
+.PHONY : Salsa20-decryption.cpp.s
 
 Salsa20-encryption.o: Salsa20-encryption.cpp.o
 .PHONY : Salsa20-encryption.o
@@ -264,9 +288,12 @@ help:
 	@echo "... Bob.o"
 	@echo "... Bob.i"
 	@echo "... Bob.s"
-	@echo "... Salsa-decryption.o"
-	@echo "... Salsa-decryption.i"
-	@echo "... Salsa-decryption.s"
+	@echo "... PRG.o"
+	@echo "... PRG.i"
+	@echo "... PRG.s"
+	@echo "... Salsa20-decryption.o"
+	@echo "... Salsa20-decryption.i"
+	@echo "... Salsa20-decryption.s"
 	@echo "... Salsa20-encryption.o"
 	@echo "... Salsa20-encryption.i"
 	@echo "... Salsa20-encryption.s"

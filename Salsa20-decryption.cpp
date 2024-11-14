@@ -19,8 +19,9 @@ Salsa20_Decryption::Salsa20_Decryption(const size_t &length, const std::vector<u
 std::vector<unsigned int> Salsa20_Decryption::Decrypt(const std::vector<unsigned int> &ciphertext) {
   assert(length_ == ciphertext.size());
   std::vector<unsigned int> message(length_);
+  auto key_stream = PRG::Generate(length_, key_);
   for (int i = 0; i < length_; ++i) {
-    message[i] = ciphertext[i] ^ key_[i];
+    message[i] = ciphertext[i] ^ key_stream[i];
   }
   return message;
 }

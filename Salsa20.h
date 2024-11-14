@@ -9,10 +9,13 @@
 #include <cstddef>
 
 class PRG {
-  static std::vector<unsigned int> nonce;
-  static std::vector<unsigned int> key;
-  void Init();
-  std::vector<unsigned int> Generate();
+private:
+  static std::vector<unsigned int> nonce_;
+public:
+  static void Init();
+  static unsigned int LeftShift(const unsigned int&, const unsigned int &);
+  static void Transform(std::vector<unsigned int>&, const unsigned int &, const unsigned int &, const unsigned int &, const unsigned int &);
+  static std::vector<unsigned int> Generate(const size_t &, const std::vector<unsigned int>&);
 };
 
 class Salsa20_Encryption {
