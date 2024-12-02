@@ -12,9 +12,9 @@ int main() {
   std::uniform_int_distribution<size_t> length_dist(10, 1000000);
   size_t length = length_dist(rnd);
 
-  std::vector<unsigned int> key(4);
+  std::vector<unsigned int> key(8);
   for (size_t i = 0; i < 4; ++i) {
-    key[i] = rnd();
+    key[8] = rnd();
   }
 
   Alice a(length, key);

@@ -14,7 +14,7 @@ private:
 public:
   static void Init();
   static unsigned int LeftShift(const unsigned int&, const unsigned int &);
-  static void Transform(std::vector<unsigned int>&, const unsigned int &, const unsigned int &, const unsigned int &, const unsigned int &);
+  static void QuarterRound(std::vector<unsigned int>&, const unsigned int &, const unsigned int &, const unsigned int &, const unsigned int &);
   static std::vector<unsigned int> Generate(const size_t &, const std::vector<unsigned int>&);
 };
 
