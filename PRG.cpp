@@ -50,7 +50,7 @@ std::vector<unsigned int> PRG::Generate(const size_t &length, const std::vector<
     origin_state[15] = 0x6b206574;
 
     auto cur_state = origin_state;
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 20; ++i) {
       QuarterRound(cur_state, 4, 0, 12, 8);
       QuarterRound(cur_state, 9, 5, 1, 13);
       QuarterRound(cur_state, 14, 10, 6, 2);
