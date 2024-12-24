@@ -1,3 +1,0 @@
-/home/sword/swordProject/StreamCipher/cmake-build-debug/CMakeFiles/StreamCipher.dir
-/home/sword/swordProject/StreamCipher/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sword/swordProject/StreamCipher/cmake-build-debug/CMakeFiles/rebuild_cache.dir
